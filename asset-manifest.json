@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/doctor_res_page/static/css/main.521d0c7e.css",
+    "main.js": "/doctor_res_page/static/js/main.11cda58d.js",
+    "index.html": "/doctor_res_page/index.html",
+    "main.521d0c7e.css.map": "/doctor_res_page/static/css/main.521d0c7e.css.map",
+    "main.11cda58d.js.map": "/doctor_res_page/static/js/main.11cda58d.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.521d0c7e.css",
+    "static/js/main.11cda58d.js"
+  ]
+}
