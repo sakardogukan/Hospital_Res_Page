@@ -3,14 +3,18 @@ import { doctorData as drData } from "../helper/data"
 import Row from "react-bootstrap/Row"
 import Col from "react-bootstrap/Col"
 import AddModal from "./AddModal"
+import { useState } from "react"
 
-const Doctors = () => {
+const Doctors = ({ apps, setApps }) => {
+  const [show, setShow] = useState(false)
+  const [drName, setDrName] = useState("")
+
   return (
     <Container className="p-2">
       <h3 className="display-6 mb-3" style={{ color: "rgb(166, 18, 189)" }}>
         Our Doctors
       </h3>
-      <Row>
+      <Row className="justify-content-center">
         {drData.map((item) => (
           // {drData.map(({id, img, dep, name}) => (
           // xs={12/2=6} -> en küçük ekranlarda sadece 2 adet dr görüneceği için 6
@@ -19,13 +23,23 @@ const Doctors = () => {
               src={item.img}
               alt={item.name}
               className="img-thumbnail doctor-img"
+              onClick={() => {
+                setDrName(item.name)
+                setShow(true)
+              }}
             />
             <h5>{item.name}</h5>
             <h6>{item.dep}</h6>
           </Col>
         ))}
       </Row>
-      <AddModal />
+      <AddModal
+        show={show}
+        handleClose={() => setShow(false)}
+        apps={apps}
+        setApps={setApps}
+        drName={drName}
+      />
     </Container>
   )
 }
