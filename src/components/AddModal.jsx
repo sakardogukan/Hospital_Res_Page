@@ -28,7 +28,7 @@ function AddModal({ show, handleClose, apps, setApps, drName }) {
         </Modal.Header>
         <Modal.Body>
           <Form onSubmit={handleSubmit}>
-            <Form.Group className="mb-3" controlId="formBasicEmail">
+            <Form.Group className="mb-3" controlId="name">
               <Form.Label>Patient Name</Form.Label>
               <Form.Control
                 type="text"
@@ -48,14 +48,16 @@ function AddModal({ show, handleClose, apps, setApps, drName }) {
                 value={date}
               />
             </Form.Group>
+
             <div className="text-center">
               <Button variant="success" type="Save" className="me-3">
-                Submit
+                Save
               </Button>
               <Button variant="danger" onClick={handleClose}>
                 Close
               </Button>
             </div>
+
           </Form>
         </Modal.Body>
       </Modal>
