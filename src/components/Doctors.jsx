@@ -15,21 +15,21 @@ const Doctors = ({ apps, setApps }) => {
         Our Doctors
       </h3>
       <Row className="justify-content-center">
-        {drData.map((item) => (
-          // {drData.map(({id, img, dep, name}) => (
+        {/* {drData.map((item) => ( */}
+          {drData.map(({id, img, dep, name}) => (
           // xs={12/2=6} -> en küçük ekranlarda sadece 2 adet dr görüneceği için 6
           <Col xs={12} sm={6} md={4} lg={3}>
             <img
-              src={item.img}
-              alt={item.name}
+              src={img}
+              alt={name}
               className="img-thumbnail doctor-img"
               onClick={() => {
-                setDrName(item.name)
+                setDrName(name)
                 setShow(true)
               }}
             />
-            <h5>{item.name}</h5>
-            <h6>{item.dep}</h6>
+            <h5>{name}</h5>
+            <h6>{dep}</h6>
           </Col>
         ))}
       </Row>
