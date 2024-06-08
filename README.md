@@ -1,7 +1,7 @@
 ## Doctor Reservation App Project
 
 ## Description
-This project is a react app
+This project was developed with React. The aim of the project is to simulate the Doctor Appointment System. Responsive design has been applied.
 
 ## Objective
 At the end of the project, following topics are to be covered;
@@ -9,7 +9,8 @@ At the end of the project, following topics are to be covered;
 * CSS
 * JavaScript
 * React
-* React-Bootstrap
+* React-Bootstrap / Bootstrap
+* Deployment
 
 -----
 
@@ -19,30 +20,31 @@ At the end of the project, following topics are to be covered;
     Doctor_Res_Page (folder)
     |
     |---- public
-            |---- index.html
+    |       |---- img
+    |       |      |---- *.jpg            
+    |       |---- index.html
     |---- src
-            |---- assets
-                    |---- img
-                           |---- *.jpg
-            |---- compenents
-                    |---- AppoinmentList.jsx
-                    |---- Doctor.jsx
-            |---- helpers
-                    |---- data.js
-            |---- pages
-                    |---- Home.jsx
-            |---- App.css
-            |---- App.js
-            |---- index.css                                
-            |---- index.js                                   
+    |       |---- compenents
+    |       |      |---- AddModal.jsx
+    |       |      |---- AppoinmentList.jsx
+    |       |      |---- Doctor.jsx
+    |       |---- helpers
+    |       |      |---- data.js
+    |       |---- pages
+    |       |      |---- Home.jsx
+    |       |---- App.css
+    |       |---- App.js
+    |       |---- index.css                                
+    |       |---- index.js                                   
     |---- .gitignore
     |---- package.json
     |---- README.md
     |---- yarn.lock
+
 ```
 
 ### Project View Images:
 
-![images](./src/assets/)
+<img src="./project_view.gif" alt="project_view_gif" style="width:800px">
 
 > Designed By DOGUKAN © Apr. 2024
